@@ -1,0 +1,11 @@
+.notif-button i {
+    transition: 350ms all;
+}
+
+.reminder-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}

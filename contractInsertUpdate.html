@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/all.css">
+    <link rel="stylesheet" href="./Style/contractInsertUpdate.css">
+
+
+</head>
+
+<body class="container-fluid w-100-per vh-100 dis-flex-start-center direction-rtl m-0 p-0 mx-0 overflow-hidden">
+    <!-- <div class=" mx-0 m-0 p-0 border border-1 border-danger"> -->
+    <!-- <div id="right-side" class="col- w-6-per p-1 h-100 " data-switch="off" include-html="menuBar.html">
+    </div> -->
+    <div include-html="menuBar.html"></div>
+
+    <div id="left-side" class="col- h-100 w-94-per scroll-y mx-0 m-0">
+        <div class="row m-0 mx-0 p-0  ">
+            <div class="row w-100 bottom-border-11-px dis-flex-center-between m-0 mx-0 p-1">
+                <!-- cust-bg-primary -->
+                <div class="row dis-flex-center-between m-0 p-1 rounded rounded-3 cust-bg-primary rounded">
+
+                    <div class="col-8 dis-flex-center-around m-0 mx-0 pe-4 p-2 text-light text-all-screen-sizes-5 ">
+                        <i class="fa-solid fa-address-card w-10-per"></i>
+                        <p class="p-0 m-0 mx-0 w-90-per">زیادکردن/نوێکردنەوەی گرێبەست</p>
+                    </div>
+
+                    <div class="col-4  dis-flex-center-end ps-3 ">
+                        <div
+                            class="btn top-bar-buttons pt-0 pb-0 ps-2 pe-2 border-0 rounded rounded-3 text-all-screen-sizes-6">
+                            گرێبەستەکان</div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row dis-flex-center p-3 w-100 m-0 mx-0">
+                <div class="row w-80-per text-all-screen-sizes-5 ">
+                    زیادکردنی گرێبەست
+                </div>
+                <div
+                    class="w-80-per shadow form-container- border border-1 cust-b-tertiary-first-der text-dark rounded rounded-4 cust-bg-secondary-first-der ps-3 pt-3 m-0 mx-0">
+                    <div class="row p-3 dis-flex-start-center   separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7 ">لایەنی دووەم</span>
+                        <input type="text" class="form-control w-80-per p-2 text-all-screen-sizes-7 "
+                            placeholder="ناوی گرێبەستکەر" name="" value="">
+                    </div>
+                    <div class="row p-3 dis-flex-center-start   separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">ژمارەی مۆبایل</span>
+                        <input type="number" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                            placeholder="ژمارە" name="" value="">
+                    </div>
+                    <div class="row p-3 dis-flex-center-start   separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">ژمارەی پێناس</span>
+                        <input type="number" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                            placeholder="ژمارە" name="" value="">
+                    </div>
+                    <div class="row p-3 dis-flex-center-start   separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">بەرواری پێناس</span>
+                        <input type="date" class="form-control w-80-per p-2 text-all-screen-sizes-7" name="" value="">
+                    </div>
+                    <div class="row two-parts pt-3 pb-3 ps-1 m-0 dis-flex-center-start mx-0 w-100">
+
+                        <div class="row dis-flex-center-end w-55-per p-0 m-0 first-child mx-0">
+                            <span class="w-36-per dis-flex-center-start text-all-screen-sizes-7 part-one">نهۆم</span>
+                            <select class="form-control w-64-per p-2 text-all-screen-sizes-7 part-two">
+                                <option selected>هەڵبژاردن</option>
+                                <option value="1">١</option>
+                                <option value="2">٢</option>
+                            </select>
+                        </div>
+
+                        <div class="row dis-flex-center-end w-45-per p-0 m-0 second-child mx-0">
+                            <span class="w-25-per dis-flex-center text-all-screen-sizes-7 part-one">شوقە</span>
+                            <select class="form-control w-75-per p-2 text-all-screen-sizes-7 part-two">
+                                <option selected>هەڵبژاردن</option>
+                                <option value="1">١</option>
+                                <option value="2">٢</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row two-parts pt-3 pb-3 ps-1 m-0 dis-flex-center-start mx-0 w-100">
+
+                        <div class="row dis-flex-center-end w-55-per p-0 m-0 first-child mx-0">
+                            <span class="w-36-per dis-flex-center-start text-all-screen-sizes-7 part-one">تۆمار</span>
+                            <input type="number" class="form-control w-64-per p-2 text-all-screen-sizes-7 part-two"
+                                placeholder="ژمارە..." name="" value="">
+                        </div>
+
+                        <div class="row dis-flex-center-end w-45-per p-0 m-0 second-child mx-0">
+                            <span class="w-25-per dis-flex-center text-all-screen-sizes-7 part-one">لاپەڕە</span>
+                            <input type="number" class="form-control w-75-per p-2 text-all-screen-sizes-7 part-two"
+                                placeholder="ژمارە..." name="" value="">
+                        </div>
+
+
+                    </div>
+                    <div class="row p-3 dis-flex-center-start  separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">ناونیشان</span>
+                        <input type="text" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                            placeholder="ناونیشان..." name="" value="">
+                    </div>
+                    <div class="row two-parts pt-3 pb-3 ps-1 m-0 dis-flex-center-start mx-0 w-100">
+
+                        <div class="row dis-flex-center-end w-55-per p-0 m-0 first-child mx-0">
+                            <span
+                                class="w-36-per dis-flex-center-start text-all-screen-sizes-7 part-one">بەڕێوبەرایەتی</span>
+                            <input type="text" class="form-control w-64-per p-2 text-all-screen-sizes-7 part-two"
+                                placeholder="ناو..." name="" value="">
+                        </div>
+
+                        <div class="row dis-flex-center-end w-45-per p-0 m-0 second-child mx-0">
+                            <span class="w-25-per dis-flex-center text-all-screen-sizes-7 part-one">کۆڵان</span>
+                            <input type="number" class="form-control w-75-per p-2 text-all-screen-sizes-7 part-two"
+                                placeholder="ژمارە..." name="" value="">
+                        </div>
+
+                    </div>
+                    <div class="row two-parts pt-3 pb-3 ps-1 m-0 dis-flex-center-start mx-0 w-100">
+
+                        <div class="row dis-flex-center-end w-55-per p-0 m-0 first-child mx-0">
+                            <span class="w-36-per dis-flex-center-start text-all-screen-sizes-7 part-one">گەڕەک</span>
+                            <input type="number" class="form-control w-64-per p-2 text-all-screen-sizes-7 part-two"
+                                placeholder="ژمارە..." name="" value="">
+                        </div>
+
+                        <div class="row dis-flex-center-end w-45-per p-0 m-0 second-child mx-0">
+                            <span class="w-25-per dis-flex-center text-all-screen-sizes-7 part-one">خانوو</span>
+                            <input type="number" class="form-control w-75-per p-2 text-all-screen-sizes-7 part-two"
+                                placeholder="ژمارە..." name="" value="">
+                        </div>
+
+                    </div>
+
+                    <div class="row p-3 dis-flex-center-start  separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">ڕووبەری شوقە</span>
+                        <input type="number" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                            placeholder="ژمارە..." name="" value="">
+                    </div>
+                    <div class="row p-3 dis-flex-center-start  separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">کرێی شووقە</span>
+                        <div class="w-80-per dis-flex-center-between p-0">
+                            <input id="rent-payment" type="number"
+                                class="form-control w-70-per p-2 text-all-screen-sizes-7" placeholder="ژمارە" name=""
+                                value="">
+                            <select class="form-select w-25-per p-top-8-px p-bottom-8-px text-all-screen-sizes-7"
+                                id="moneytype">
+                                <option selected>جۆر</option>
+                                <option value="1">دۆلار</option>
+                                <option value="2">دینار</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row p-3 dis-flex-center-start  separate">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">کرێی خزمەتگوزاری</span>
+                        <input id="service-payment" type="number"
+                            class="form-control w-80-per p-2 text-all-screen-sizes-7" placeholder="ژمارە" name=""
+                            value="">
+                    </div>
+                    <div class="row p-3 dis-flex-center-start  separate">
+                        <span class="w-20-per dis-flex-center-start pt-2 pb-2  text-all-screen-sizes-7">کۆی گشتی</span>
+                        <input id="all-payments" type="number" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                            placeholder="" disabled>
+                    </div>
+                    <div class="row p-3 dis-flex-center-start separate">
+                        <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">جۆری نرخ</span>
+                        <select class="form-control w-80-per p-2 text-all-screen-sizes-7" id="moneytype">
+                            <option selected>هەڵبژاردن</option>
+                            <option value="1">١</option>
+                            <option value="2">٢</option>
+                        </select>
+                    </div>
+                    <div class="row p-3 dis-flex-center-start separate">
+                        <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">هۆکاری بەکارهێنان</span>
+                        <select class="form-control w-80-per p-2 text-all-screen-sizes-7">
+                            <option selected>هەڵبژاردن</option>
+                            <option value="1">١</option>
+                            <option value="2">٢</option>
+                        </select>
+                    </div>
+                    <div class="row p-3 dis-flex-center-start separate">
+                        <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">جۆری یەکە</span>
+                        <select class="form-control w-80-per p-2 text-all-screen-sizes-7">
+                            <option selected>هەڵبژاردن</option>
+                            <option value="1">١</option>
+                            <option value="2">٢</option>
+                        </select>
+                    </div>
+                    <div class="row p-3 dis-flex-center-start separate">
+                        <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">بەرواری گرێبەست</span>
+                        <input type="date" class="form-control w-80-per p-2 text-all-screen-sizes-7" name="" value="">
+                    </div>
+                    <div class="row p-3 dis-flex-center-start separate ">
+                        <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">کۆتایهاتنی
+                            گرێبەستب</span>
+                        <input type="date" class="form-control w-80-per p-2 text-all-screen-sizes-7" name="" value="">
+
+                    </div>
+
+                    <div class="row p-3 dis-flex-center-start separate ">
+                        <span class="w-20-per dis-flex-center-start text-all-screen-sizes-7">ماوەی گرێبەست</span>
+                        <input type="text" class="form-control w-80-per p-2 text-all-screen-sizes-7" name=""
+                            placeholder="ساڵ..." value="">
+                    </div>
+
+                    <div class="row p-3 dis-flex-center-start separate ">
+                        <span class="w-30-per dis-flex-center-start text-all-screen-sizes-7">بیرهێنانەوەی کۆتایهاتنی
+                            گرێبەست</span>
+                        <div class="w-70-per dis-flex-center-between p-0">
+                            <input type="number" class="form-control w-70-per p-2 text-all-screen-sizes-7"
+                                placeholder="ژمارە" name="" value="">
+                            <div class="w-25-per p-2 rounded text-all-screen-sizes-7">ڕۆژ</div>
+                        </div>
+                    </div>
+
+                    <div class="row p-3 dis-flex-center-start separate ">
+                        <span class="w-30-per dis-flex-center-start text-all-screen-sizes-7">بڕی دڵنیایی</span>
+                        <div class="w-70-per dis-flex-center-between p-0">
+                            <input type="number" class="form-control w-100-per p-2 text-all-screen-sizes-7"
+                                placeholder="ژمارە" name="" value="">
+                        </div>
+                    </div>
+                    <div
+                        class="row m-0 mx-0 p-4 dis-flex-center border-top border-bottom text-all-screen-sizes-5 m-top-10-px">
+                        <b class="w-50 dis-flex-center">بەرواری زیادکردن یاخود کەمکردنی کرێ</b>
+                    </div>
+                    <div class="row m-0 mx-0 p-3 dis-flex-center">
+                        <div id="date-addition" class="row mx-0 m-0 w-90-per border rounded rounded-3 mt-3">
+                            <div class="row p-3 dis-flex-center-start separate">
+                                <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">لە بەرواری</span>
+                                <input type="date" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                                    placeholder="ژمارە" name="" value="">
+                            </div>
+                            <div class="row p-3 dis-flex-center-start separate">
+                                <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">بۆ بەرواری</span>
+                                <input type="date" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                                    placeholder="ژمارە" name="" value="">
+                            </div>
+                            <div class="row p-3 dis-flex-center-start separate">
+                                <span class="w-20-per dis-flex-center-start  text-all-screen-sizes-7">بڕی پارە</span>
+                                <input type="number" class="form-control w-80-per p-2 text-all-screen-sizes-7"
+                                    placeholder="ژمارە" name="" value="">
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mx-0 m-0 w-90-per z-0 mt-4 p-3  position-relative">
+                            <div id="plus-button"
+                                class="btn w-40-px h-40-px bg-light text-success rounded rounded-5 fa-solid fa-circle-plus text-all-screen-sizes-5 dis-flex-center p-0 m-0 mx-0">
+
+                            </div>
+                            <div id="empty-div" class=" w-100-per border h-20-px rounded rounded-4">
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row p-3 dis-flex-center separate">
+                        <button class="btn btn-success w-20-per text-all-screen-sizes-7">زیادکردن</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/utils.js"></script>
+<script src="./JS/contractInsertUpdate.js"></script>
+<script src="./JS/menuBar.js"></script>
+<script src="./JS/includeHtml.js"></script>
+
+<script>
+    // var loaded = new Promise((loaded) => {
+    //     window.onload = loaded;
+    // })
+
+    // loaded.then(includeHTML);
+    // setTimeout(() => {
+    //     loaded.then(menuBar)
+    // }, 400);
+    includeHTML(0);
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,302 @@
+
+.tr-dur-50-ms {
+    transition-duration: 50ms;
+}
+.tr-dur-100-ms{
+    transition-duration: 100ms;
+}
+.tr-dur-150-ms{
+    transition-duration: 150ms;
+}
+.tr-dur-200-ms {
+    transition-duration: 200ms;
+}
+.tr-dur-250-ms{
+    transition-duration: 250ms;
+}
+.tr-dur-300-ms {
+    transition-duration: 300ms;
+}
+.tr-dur-350-ms{
+    transition-duration: 350ms;
+}
+.tr-dur-400-ms {
+    transition-duration: 400ms;
+}
+.tr-dur-450-ms{
+    transition-duration: 450ms;
+}
+.tr-dur-500-ms {
+    transition-duration: 500ms;
+}
+.tr-dur-550-ms{
+    transition-duration: 550ms;
+}
+.tr-dur-600-ms {
+    transition-duration: 600ms;
+}
+.tr-dur-650-ms{
+    transition-duration: 650ms;
+}
+.tr-dur-700-ms {
+    transition-duration: 700ms;
+}
+.tr-dur-750-ms{
+    transition-duration: 750ms;
+}
+.tr-dur-800-ms {
+    transition-duration: 800ms;
+}
+.tr-dur-850-ms{
+    transition-duration: 850ms;
+}
+.tr-dur-900-ms {
+    transition-duration: 900ms;
+}
+.tr-dur-950-ms{
+    transition-duration: 950ms;
+}
+.tr-dur-1000-ms {
+    transition-duration: 1000ms;
+}
+
+
+
+
+.tr-dur-1-s {
+    transition-duration: 1s;
+}
+.tr-dur-2-s {
+    transition-duration:2s;
+}
+
+.tr-dur-3-s {
+    transition-duration: 3s;
+}
+
+.tr-dur-4-s {
+    transition-duration: 4s;
+}
+
+.tr-dur-5-s {
+    transition-duration: 5s;
+}
+
+.tr-dur-6-s {
+    transition-duration: 6s;
+}
+
+
+
+
+
+
+.tr-del-50-ms {
+    transition-delay: 50ms;
+}
+
+.tr-del-100-ms {
+    transition-delay: 100ms;
+}
+
+.tr-del-150-ms {
+    transition-delay: 150ms;
+}
+
+.tr-del-200-ms {
+    transition-delay: 200ms;
+}
+
+.tr-del-250-ms {
+    transition-delay: 250ms;
+}
+
+.tr-del-300-ms {
+    transition-delay: 300ms;
+}
+
+.tr-del-350-ms {
+    transition-delay: 350ms;
+}
+
+.tr-del-400-ms {
+    transition-delay: 400ms;
+}
+
+.tr-del-450-ms {
+    transition-delay: 450ms;
+}
+
+.tr-del-500-ms {
+    transition-delay: 500ms;
+}
+
+.tr-del-550-ms {
+    transition-delay: 550ms;
+}
+
+.tr-del-600-ms {
+    transition-delay: 600ms;
+}
+
+.tr-del-650-ms {
+    transition-delay: 650ms;
+}
+
+.tr-del-700-ms {
+    transition-delay: 700ms;
+}
+
+.tr-del-750-ms {
+    transition-delay: 750ms;
+}
+
+.tr-del-800-ms {
+    transition-delay: 800ms;
+}
+
+.tr-del-850-ms {
+    transition-delay: 850ms;
+}
+
+.tr-del-900-ms {
+    transition-delay: 900ms;
+}
+
+.tr-del-950-ms {
+    transition-delay: 950ms;
+}
+
+.tr-del-1000-ms {
+    transition-delay: 1000ms;
+}
+
+
+
+
+.tr-del-2-s {
+    transition-delay: 2s;
+}
+
+.tr-del-3-s {
+    transition-delay: 3s;
+}
+
+.tr-del-4-s {
+    transition-delay: 4s;
+}
+
+.tr-del-5-s {
+    transition-delay: 5s;
+}
+
+.tr-del-6-s {
+    transition-delay: 6s;
+}
+
+
+
+
+.tr-prop-all {
+    transition-property: all;
+}
+.tr-prop-border{
+    transition-property: border;
+}
+
+.tr-prop-width {
+    transition-property: width;
+}
+
+.tr-prop-min-width {
+    transition-property: min-width;
+}
+
+.tr-prop-max-width {
+    transition-property: max-width;
+}
+
+.tr-prop-height {
+    transition-property: height;
+}
+
+.tr-prop-max-height {
+    transition-property: max-height;
+}
+
+.tr-prop-min-height {
+    transition-property: min-height;
+}
+
+.tr-prop-top {
+    transition-property: top;
+}
+.tr-prop-left {
+    transition-property: left;
+}
+.tr-prop-right {
+    transition-property: right;
+}
+.tr-prop-bottom {
+    transition-property: bottom;
+}
+
+.tr-prop-pos {
+    transition-property: position;
+}
+
+
+
+.tr-timing-linear {
+    transition-timing-function: linear;
+}
+
+.tr-timing-ease {
+    transition-timing-function: ease;
+}
+
+.tr-timing-ease-in {
+    transition-timing-function: ease-in;
+}
+
+.tr-timing-ease-out {
+    transition-timing-function: ease-out;
+}
+
+.tr-timing-ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+
+
+.border-loading-b-5-all-30 {
+    border-bottom:solid rgb(49, 133, 156);
+    border-top: solid rgb(191, 144, 0); 
+        border-left: solid transparent;
+            border-right: solid transparent;
+    border-width: 5px;
+    animation: 800ms circling infinite;
+    width: 25px; height: 25px ;
+    border-radius: 50%;
+}
+
+@keyframes circling{
+    0%{
+        transform: rotateZ(0deg)
+    }
+    25%{
+        transform: rotateZ(90deg)
+    }
+    50% {
+            transform: rotateZ(180deg)
+    }
+    75% {
+            transform: rotateZ(270deg)
+    }
+    100% {
+            transform: rotateZ(360deg)
+    }
+
+}
+
+

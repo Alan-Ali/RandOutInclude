@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/all.css">
+</head>
+
+<body class="container-fluid w-100-per vh-100 dis-flex-start-center direction-rtl m-0 p-0 mx-0 overflow-hidden">
+    <!-- <div class=" mx-0 m-0 p-0 border border-1 border-danger"> -->
+    <div include-html="menuBar.html"></div>
+    <div id="left-side" class="col- h-100 w-94-per scroll-y mx-0 m-0">
+        <div class="row m-0 mx-0 p-0  ">
+            <div class="row w-100 bottom-border-11-px dis-flex-center-between m-0 mx-0 p-1">
+                <!-- cust-bg-primary -->
+                <div class="row dis-flex-center-between m-0 p-1 rounded rounded-3 cust-bg-primary rounded">
+
+                    <div class="col-8 dis-flex-center-around m-0 mx-0 pe-4 p-2 text-light text-all-screen-sizes-5 ">
+                        <i class="fa-solid fa-user-plus w-10-per"></i>
+                        <p class="p-0 m-0 mx-0 w-90-per">زیادکردنی بەکارهێنەر</p>
+                    </div>
+
+                    <div class="col-4  dis-flex-center-end ps-3 ">
+                        <div
+                            class="btn top-bar-buttons pt-0 pb-0 ps-2 pe-2 border-0 rounded rounded-3 text-all-screen-sizes-6">
+                            بەکارهێنەرەکان</div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row dis-flex-center p-3 w-100 m-0 mx-0">
+                <div class="row w-100 m-0 mx-0 p-3 dis-flex-center">
+
+                    <div class="w-80-per text-all-screen-sizes-5 dis-flex-center-start ">
+                        زیادکردنی بەکارهێنەر
+                    </div>
+                    <div id="form-holder"
+                        class="w-80-per shadow border border-1 cust-b-tertiary-first-der text-dark rounded rounded-4 cust-bg-secondary-first-der p-3 p-3 m-0 mx-0">
+                        <div class="row-  w-100 p-1 m-0 mx-0">
+
+                            <div class="mt-2">
+                                <div class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">ناوی بەکارهێنەر</div>
+                                <input type="text"
+                                    class="form-control rounded-0 rounded-bottom rounded-left text-all-screen-sizes-7"
+                                    placeholder="ناو...">
+                            </div>
+                            <div class="mt-2">
+                                <div class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">ناوی تەواوی بەکارهێنەر</div>
+                                <input type="text"
+                                    class="form-control rounded-0 rounded-bottom rounded-left text-all-screen-sizes-7"
+                                    placeholder="ناو...">
+                            </div>
+                            <div class="mt-2">
+                                <div class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">وشەی نهێنی</div>
+                                <input type="password"
+                                    class="form-control rounded-0 rounded-bottom rounded-left text-all-screen-sizes-7"
+                                    placeholder="وشەی نهێنی...">
+                            </div>
+                            <div class="mt-2">
+                                <div class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">دڵنیابوون لە وشەی نهێنی
+                                </div>
+                                <input type="password"
+                                    class="form-control rounded-0 rounded-bottom rounded-left text-all-screen-sizes-7"
+                                    placeholder="وشەی نهێنی...">
+                            </div>
+
+                            <div class="mt-2">
+                                <div class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">ڕۆڵی بەکارهێنەر</div>
+                                <select
+                                    class="form-control rounded-0 rounded-bottom rounded-left text-all-screen-sizes-7"
+                                    aria-label="Default select example">
+                                    <option selected>هەڵبژاردن...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="row p-2 dis-flex-center-start separate mt-3">
+                                <button class="btn btn-success w-20-per text-all-screen-sizes-7">زیادکردن</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- </div> -->
+</body>
+<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/utils.js"></script>
+<script src="./JS/menuBar.js"></script>
+<script src="./JS/includeHtml.js"></script>
+
+<script>
+    // var loaded = new Promise((loaded) => {
+    //     window.onload = loaded;
+    // })
+
+    // loaded.then(includeHTML);
+    // setTimeout(() => {
+    //     loaded.then(menuBar)
+    // }, 400);
+    includeHTML(0);
+
+</script>
+
+</html>

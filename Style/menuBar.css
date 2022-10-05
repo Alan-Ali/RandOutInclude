@@ -1,0 +1,197 @@
+@import url(./colorVariables.css);
+
+
+.menu-small-buttons {
+    font-size: calc(.7em + .5vw) !important;
+}
+
+.bell-size {
+    font-size: calc(.5em + .7vw);
+}
+
+@media screen and (max-width: 768px) and (min-width: 400px) {
+
+    .menu-small-buttons {
+        font-size: calc(.5vw - .5em);
+    }
+
+}
+
+
+
+.menu-bar-buttons {
+    border: none !important;
+    outline: none !important;
+    transition: 250ms all;
+}
+
+.menu-bar-buttons:hover {
+    color: var(--primary);
+    /* transform: rotate(180deg)  */
+}
+
+.rotate-180-deg {
+    transform: rotate(180deg);
+}
+
+.menu-bar-buttons:active {
+    border: none !important;
+    outline: none !important;
+}
+
+
+
+.nav-buttons-holder {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+#shifting {
+    border: none !important;
+    outline: none !important;
+    transition: 250ms all;
+    color: var(--secondary);
+}
+
+
+#shifting:active {
+    border: none !important;
+    outline: none !important;
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+
+.extended-parts button:hover a {
+    text-decoration: none;
+    color: var(--secondary-second-der);
+    width: 100%;
+}
+
+#shifting:focus {
+    border: none !important;
+    outline: none !important;
+    background-color: none;
+}
+
+
+
+#shifting:hover {
+    color: var(--secondary-second-der);
+    /* background-color: var(--secondary);    */
+}
+
+
+
+#summarized-icons {
+    transition: 250ms right;
+}
+
+#summarized-icons button:hover {
+    background-color: var(--secondary);
+    color: var(--secondary-second-der);
+}
+
+
+#left-side {
+    transition: 250ms width;
+}
+
+
+#right-side {
+    transition: 250ms width;
+}
+
+
+.left-button-part {
+    position: absolute;
+    transition: 250ms right;
+
+    top: 0;
+    left: 0;
+
+}
+
+
+.right-button-part {
+    position: absolute;
+    transition: 250ms right;
+    top: 0;
+    right: 0;
+}
+
+.button-part-colors {
+    transition: 250ms color, 250ms background-color;
+    color: var(--secondary);
+
+}
+
+.menu-bar-buttons:hover .button-part-colors {
+    color: var(--secondary-second-der);
+    background-color: var(--secondary);
+}
+
+
+.button-holders {
+    transition: 250ms all;
+    /* margin-bottom: 0 !important; */
+}
+
+
+.before-button {
+
+    border: none !important;
+    outline: none !important;
+    transition: 250ms all;
+    color: var(--secondary);
+    font-size: calc(1em + 0.3vw);
+
+}
+
+
+.before-button:hover {
+    background-color: var(--secondary) !important;
+    color: var(--secondary-second-der) !important;
+}
+
+
+.before-button::after {
+    content: "";
+    /* display: flex; */
+    position: absolute;
+    width: 15px;
+    height: 45px;
+    top: -25px !important;
+    right: -15px !important;
+    border-bottom-right-radius: 10px;
+    border-right: 2px solid var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+    z-index: -1;
+
+}
+
+
+
+.top-bar-buttons {
+    border: none !important;
+
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.top-bar-buttons:hover {
+    /* outline: 2px solid rgba(97, 229, 255, 0.371); */
+    background-color: var(--secondary) !important;
+    color: var(--secondary-second-der) !important;
+}
+
+.top-bar-buttons:active {
+    outline: 3px solid rgba(97, 229, 255, 0.371);
+    background-color: var(--secondary) !important;
+    color: var(--secondary-second-der) !important;
+}

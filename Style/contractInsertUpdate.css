@@ -1,0 +1,179 @@
+.bottom-border-11-px {
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.bottom-border-20-px {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.bottom-border-25-px {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.minus-button {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+#plus-button {
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#empty-div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+
+
+@media screen and (max-width: 768px) and (min-width: 400px) {
+    .form-container- {
+        width: 100% !important;
+
+    }
+
+    .two-parts {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .two-parts .first-child {
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 3px solid red; */
+    }
+
+    .two-parts .first-child .part-one {
+        width: 100% !important;
+        /* border: 3px solid red; */
+
+    }
+
+
+    .two-parts .first-child .part-two {
+        width: 100% !important;
+
+        /* border: 3px solid red; */
+
+    }
+
+
+    .two-parts .second-child {
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 3px solid red; */
+    }
+
+
+    .two-parts .second-child .part-one {
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: flex-start;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    .two-parts .second-child .part-two {
+        width: 100% !important;
+    }
+
+    .separate {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+
+        /* border: 3px solid red; */
+    }
+
+    .separate span {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .separate select {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .separate input {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .separate div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .separate div input[type="number"] {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .separate div div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 10%;
+        /* border: 3px solid red; */
+    }
+
+    .separate div input {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 70%;
+        /* border: 3px solid red; */
+    }
+
+    .separate div select {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 25%;
+        /* border: 3px solid red; */
+    }
+
+    /* .form-container- . */
+}

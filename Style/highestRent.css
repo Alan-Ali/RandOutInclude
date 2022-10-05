@@ -1,0 +1,15 @@
+@import url(./colorVariables.css);
+
+.sort-button {
+    color: var(--secondary-second-der);
+    border: none;
+}
+
+.sort-button:hover {
+    color: var(--primary-second-der) !important;
+    border: none;
+}
+
+/* .rent {
+    transition: 500ms all;
+} */

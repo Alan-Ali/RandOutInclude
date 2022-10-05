@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/all.css">
+    <link rel="stylesheet" href="./Style/reminderList.css">
+</head>
+
+<body class="container-fluid w-100-per vh-100 dis-flex-start-center direction-rtl m-0 p-0 mx-0 overflow-hidden">
+    <!-- <div class=" mx-0 m-0 p-0 border border-1 border-danger"> -->
+    <div include-html="menuBar.html"></div>
+    <div id="left-side" class="col- h-100 w-94-per scroll-y mx-0 m-0">
+        <div class="row m-0 mx-0 p-0  ">
+            <div class="row w-100 bottom-border-11-px dis-flex-center-between m-0 mx-0 p-1">
+                <!-- cust-bg-primary -->
+                <div class="row dis-flex-center-between m-0 p-1 rounded rounded-3 cust-bg-primary rounded">
+
+                    <div class="col-8 dis-flex-center-start m-0 mx-0 pe-4 p-2 text-light text-all-screen-sizes-5  ">
+                        <i class="fa-solid fa-address-card w-10-per"></i></i>
+                        <p class="p-0 m-0 mx-0 w-90-per">لیستی بیرخەرەوە</p>
+                    </div>
+                    <div class="col-4  dis-flex-center-end ps-3 ">
+                        <div
+                            class="btn top-bar-buttons pt-0 pb-0 ps-2 pe-2 border-0 rounded rounded-3 text-all-screen-sizes-6">
+                            گرێبەستەکان</div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row dis-flex-center p-3 w-100 m-0 mx-0">
+                <div class="row w-100-per text-all-screen-sizes-5 pe-5 ">
+                    بیرخەرەوەکان
+                </div>
+                <div class="w-100-per m-0 p-0 mx-0 reminder-container ">
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="reminders shadow w-400-px border p-4 rounded rounded-4 cust-bg-secondary-first-der mb-5 ">
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center pb-2">
+                            <div class=" w-80-per h-100-per mx-0 m-0 ">
+                                <div class="row w-60-per text-all-screen-sizes-5 mx-0 m-0 pe-2 border-bottom">
+                                    ناوی بیرخەرەوە
+                                </div>
+                                <div class=" mx-0 m-0 pe-3 dis-flex-center-around ">
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6 direction-ltr">
+                                        12:12 PM
+                                    </div>
+                                    <div class=" w-50-per dis-flex-center text-all-screen-sizes-6">
+                                        22/2/2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-20-per ">
+                                <div class="btn border rounded rounded-4 notif-button w-100" data-notif="on">
+                                    <i
+                                        class="fa-solid fa-bell w-100-per text-all-screen-sizes-5 dis-flex-center p-2 cust-text-secondary-second-der"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center p-2 ">
+                            لە D-Tech باشترینەکانمان بۆ ئێوە هەڵبژاردوە.
+                            لاپتۆپی hp ی ده‌ستی دووی ئه‌وروپی زۆر خاوێن بە نرخی زۆر گونجاو .
+                            بۆ مامۆستایان و قوتابیان زۆر ناوازە و گونجاون، هه‌ڵگرتن و گواستنه‌وه‌یان ئاسانه‌ و کێشیان
+                            كه‌مه‌.
+                        </div>
+
+                        <div class=" mx-0 m-0 p-0 border-bottom dis-flex-center-around pt-2">
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">شووقە/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                            <div class="w-50-per dis-flex-center-around p-0 m-0">
+                                <p class="m-0 p-0 text-all-screen-sizes-5">نهۆم/</p>
+                                <p class="m-0 p-0 text-all-screen-sizes-5 dis-flex-center-start">3</p>
+                            </div>
+                        </div>
+                        <div class=" mx-0 m-0 p-0 dis-flex-center-around p-2 pt-3 pb-3">
+                            <div class="w-30-per dis-flex-center text-all-screen-sizes-5 ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button"
+                                    class="btn btn-danger p-2 dis-flex-center w-80-per h-100-per text-all-screen-sizes-1"
+                                    data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </div>
+                            <div class="w-30-per dis-flex-center  text-all-screen-sizes-5">
+
+                                <button type="button"
+                                    class="btn btn-warning p-2 dis-flex-center w-80-per h-100-per text-light text-all-screen-sizes-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade position-fixed" id="reg-modal" tabindex="-1" aria-labelledby="modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h6 class="modal-title " id="modal-title"></h5> -->
+                    <button type="button" class="btn-close h6" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-all-screen-sizes-5">
+                    دڵنیایت دەتەوێت ئەم بیرخەرەوەیە بسڕیتەوە؟
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-all-screen-sizes-5"
+                        data-bs-dismiss="modal">نەخێر</button>
+                    <button type="button" class="btn btn-primary text-all-screen-sizes-5">بەڵی</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+</body>
+<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/utils.js"></script>
+<script src="./JS/menuBar.js"></script>
+<script src="./JS/includeHtml.js"></script>
+<script src="./JS/reminderList.js"></script>
+
+<script>
+    // var loaded = new Promise((loaded) => {
+    //     window.onload = loaded;
+    // })
+
+    // loaded.then(includeHTML);
+    // setTimeout(() => {
+    //     loaded.then(menuBar)
+    // }, 400);
+    includeHTML(0);
+
+</script>
+
+
+</html>

@@ -1,0 +1,139 @@
+@import url(./colorVariables.css);
+
+
+/* PRIMARY FOR BACKGROUND COLORS */
+.cust-bg-primary {
+    background-color: var(--primary);
+}
+
+.cust-bg-primary-first-der {
+    background-color: var(--primary-first-der);
+}
+
+.cust-bg-primary-second-der {
+    background-color: var(--primary-second-der);
+}
+
+
+/* SECONDARY FOR BACKGROUND COLORS */
+.cust-bg-secondary {
+    background-color: var(--secondary);
+}
+
+.cust-bg-secondary-first-der {
+    background-color: var(--secondary-first-der);
+}
+
+.cust-bg-secondary-second-der {
+    background-color: var(--secondary-second-der);
+}
+
+
+
+/* TERTIARY FOR BACKGROUND COLORS */
+.cust-bg-tertiary {
+    background-color: var(--tertiary);
+}
+
+.cust-bg-tertiary-first-der {
+    background-color: var(--tertiary-first-der);
+}
+
+.cust-bg-tertiary-second-der {
+    background-color: var(--tertiary-second-der);
+}
+
+
+
+
+
+
+
+/* PRIMARY FOR BORDER COLORS */
+.cust-b-primary {
+    border-color: var(--primary);
+}
+
+.cust-b-primary-first-der {
+    border-color: var(--primary-first-der);
+}
+
+.cust-b-primary-second-der {
+    border-color: var(--primary-second-der);
+}
+
+
+
+/* SECONDARY FOR BORDER COLORS */
+.cust-b-secondary {
+    border-color: var(--secondary);
+}
+
+.cust-b-secondary-first-der {
+    border-color: var(--secondary-first-der);
+}
+
+.cust-b-secondary-second-der {
+    border-color: var(--secondary-second-der);
+}
+
+
+
+/* TERTIARY FOR BORDER COLORS */
+.cust-b-tertiary {
+    border-color: var(--tertiary);
+}
+
+.cust-b-tertiary-first-der {
+    border-color: var(--tertiary-first-der);
+}
+
+.cust-b-tertiary-second-der {
+    border-color: var(--tertiary-second-der);
+}
+
+
+
+
+
+/* PRIMARY FOR TEXT COLORS */
+.cust-text-primary {
+    color: var(--primary);
+}
+
+.cust-text-primary-first-der {
+    color: var(--primary-first-der);
+}
+
+.cust-text-primary-second-der {
+    color: var(--primary-second-der);
+}
+
+
+/* SECONDARY FOR TEXT COLORS */
+.cust-text-secondary {
+    color: var(--secondary);
+}
+
+.cust-text-secondary-first-der {
+    color: var(--secondary-first-der);
+}
+
+.cust-text-secondary-second-der {
+    color: var(--secondary-second-der);
+}
+
+
+
+/* TERTIARY FOR TEXT COLORS */
+.cust-text-tertiary {
+    color: var(--tertiary);
+}
+
+.cust-text-tertiary-first-der {
+    color: var(--tertiary-first-der);
+}
+
+.cust-text-tertiary-second-der {
+    color: var(--tertiary-second-der);
+}

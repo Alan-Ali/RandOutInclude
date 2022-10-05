@@ -1,0 +1,461 @@
+
+.resize-horiz{
+    resize: horizontal;
+}
+
+.resize-vert {
+    resize: vertical;
+}
+
+.resize-none {
+    resize:none;
+}
+
+.resize-both{
+    resize: both;
+}
+
+/* 
+
+    for radio Buttions
+
+*/
+
+
+/* The container */
+.radio-container {
+    /* display: block; */
+    position: relative;
+    width: 25px;
+    height: 25px;
+
+    /* padding-left: 35px; */
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* border: 1px solid red; */
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 3px solid rgb(49, 133, 156);
+    transition: background 400ms;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
+    background-color: rgb(191, 144, 0);
+    /* border: rgb(255, 242, 204) rgb(191, 144, 0)*/
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+/* .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 52%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+} */
+
+/* Show the indicator (dot/circle) when checked */
+/* .radio-container input:checked~.checkmark:after {
+    display: block;
+
+} */
+
+/* Style the indicator (dot/circle) */
+/* .radio-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+} */
+
+
+
+/* 
+
+    for checkboxes
+
+*/
+
+.checkbox {
+    width: 20%;
+    /* margin-left: 15px ; */
+    position: relative;
+    /* display: block; */
+    height: 100%;
+    /* border: 8px solid red; */
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+    
+}
+
+.checkbox label {
+    position: relative;
+            /* top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); */
+}
+
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+    border: 2px solid rgb(49, 133, 156);
+}
+
+.checkbox label:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid rgb(191, 144, 0);
+    border-left: 2px solid rgb(191, 144, 0);
+    -webkit-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0.25s;
+    will-change: transform;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+/* 
+rgb(49, 133, 156);
+rgb(191, 144, 0);
+*/
+.checkbox input[type="checkbox"]:checked~label::before {
+    color: rgb(49, 133, 156);
+}
+
+.checkbox input[type="checkbox"]:checked~label::after {
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+    min-height: 34px;
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    /* vertical-align: sub; */
+}
+
+.checkbox label span {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.checkbox input[type="checkbox"]:focus+label::before {
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+    for selections
+
+*/
+
+/* 
+rgb(49, 133, 156);
+rgb(191, 144, 0);
+ rgb(255, 242, 204)
+*/
+
+
+/* ===== Horizontal Rule ===== */
+.rule {
+    /* margin: 10px 0; */
+    border: none;
+    height: 1.5px;
+    background-image: linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
+}
+
+/* ===== Select Box ===== */
+.sel {
+    font-size: 15px;
+    display: inline-block;
+    /* margin: 3em 2em; */
+    width: 28%;
+    height: 40px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.sel::before {
+    position: absolute;
+    content: '';
+    font-family: cursive;
+    font-size: 15px;
+    color: #FFF;
+    right: 20px;
+    top: calc(50% - 0.5em);
+}
+
+.sel.active::before {
+    transform: rotateX(-180deg);
+}
+
+
+/*  THIS IS FOR THE DEFUALT VALUES LIEK MONTH, DAY OR YEAR */
+.sel__placeholder {
+    display: block;
+    font-family: cursive;
+    font-size: 20px;
+    color: #838e95;
+    padding-top: 5px;
+    text-align: left;
+    pointer-events: none;
+    user-select: none;
+    visibility: visible;
+}
+::placeholder{
+    color: #838e95;
+}
+
+.sel.active .sel__placeholder {
+    visibility: hidden;
+}
+
+.sel__placeholder::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding: 0.2em 0.5em; */
+    content: attr(data-placeholder);
+    visibility: hidden;
+}
+
+.sel.active .sel__placeholder::before {
+    visibility: visible;
+
+}
+
+.sel__box {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: -4px;
+    display: none;
+    list-style-type: none;
+    text-align: left;
+    font-size: 15px;
+    background-color: #FFF;
+    width: calc(100% + 8px);
+    box-sizing: border-box;
+
+}
+
+.sel.active .sel__box {
+    display: block;
+    animation: fadeInUp 500ms;
+        /* padding-top: 5px; */
+}
+
+.sel__box__options {
+    padding-left: 5px;
+    display: list-item;
+    font-family: cursive;
+    font-size: 15px;
+    color: black;
+    padding: 5px 8px;
+        /* padding-top: 5px; */
+    user-select: none;
+}
+
+.sel__box__options::after {
+    content: '';
+    font-family: cursive;
+    font-size: 15px;
+    margin-left: 5px;
+    
+    display: none;
+}
+
+/* 
+rgb(49, 133, 156);
+rgb(191, 144, 0);
+*/
+
+
+.sel__box__options.selected::after {
+    display: inline;
+}
+
+.sel__box__options:hover {
+    background-color: rgb(49, 133, 156);
+    color: rgb(255, 242, 204);
+}
+
+/* ----- Select Box Black Panther ----- */
+.sel {
+    border-bottom: 3px solid rgb(191, 144, 0);
+}
+
+.sel--black-panther {
+    z-index: 3;
+}
+
+/* ----- Select Box Superman ----- */
+.sel--superman {
+    /*   display: none; */
+    z-index: 2;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+/* 
+the select box above, used with a particular jQuery code and html:
+
+
+
+    <div class="sel sel--superman">
+        <select name="select-superpower" id="select-superpower">
+            <option value="" disabled>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+        </select>
+    </div>
+
+
+
+===== Logic for creating fake Select Boxes =====
+$('.sel').each(function() {
+        $(this).children('select').css('display', 'none');
+
+        var $current =$(this);
+
+        $(this).find('option').each(function(i) {
+                if (i==0) {
+                    $current.prepend($('<div>', {
+                            class: $current.attr('class').replace(/sel/g, 'sel__box')
+                        }));
+
+                var placeholder=$(this).text();
+
+                $current.prepend($('<span>', {
+                        class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
+                        text: placeholder,
+                        'data-placeholder': placeholder
+                    }));
+
+            return;
+        }
+
+        $current.children('div').append($('<span>', {
+                class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
+                text: $(this).text()
+            }));
+});
+});
+
+// Toggling the `.active` state on the `.sel`.
+$('.sel').click(function() {
+        $(this).toggleClass('active');
+    });
+
+// Toggling the `.selected` state on the options.
+$('.sel__box__options').click(function() {
+        var txt=$(this).text();
+        var index=$(this).index();
+
+        $(this).siblings('.sel__box__options').removeClass('selected');
+        $(this).addClass('selected');
+
+        var $currentSel =$(this).closest('.sel');
+        $currentSel.children('.sel__placeholder').text(txt);
+        $currentSel.children('select').prop('selectedIndex', index + 1);
+    });
+
+*/

@@ -1,0 +1,58 @@
+body {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 100vh;
+    overflow: hidden;
+    direction: rtl;
+}
+
+
+.signin-container {
+    /* position: relative; */
+    width: 550px;
+    height: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+.tower-pic {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+
+}
+
+.signin-right {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.signin-left {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    font-size: calc(1em + 1.5vw);
+
+}
+
+.bottom {
+    width: 100%;
+    height: 82%;
+
+}

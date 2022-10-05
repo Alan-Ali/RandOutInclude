@@ -1,0 +1,107 @@
+/* 
+t = text 
+dec = decoration
+col = color 
+
+*/
+
+.t-dec-dashed{
+    text-decoration:dashed; 
+}
+
+.t-dec-dotted{
+    text-decoration:dotted;
+}
+
+.t-dec-double {
+    text-decoration:double ;
+}
+
+.t-dec-line-through {
+    text-decoration:line-through ;
+}
+.t-dec-none {
+    text-decoration:none ;
+}
+.t-dec-overline {
+    text-decoration:overline ;
+}
+
+.t-dec-solid {
+    text-decoration:solid ;
+}
+
+.t-dec-underline {
+    text-decoration:underline ;
+}
+
+.t-dec-wavy {
+    text-decoration:wavy ;
+}
+
+
+
+
+
+.t-col-main-green:active{
+    color: rgb(49, 133, 156);
+}
+
+.t-col-main-soft-yellow:active {
+    color:rgb(255, 242, 204);
+}
+
+.t-col-main-yellow:active {
+    color:rgb(191, 144, 0);
+}
+
+.t-col-main-white:active {
+    color:rgb(242, 242, 242);
+}
+
+.t-col-main-grey:active {
+    color:rgb(89, 89, 89);
+}
+
+.direction-rtl{
+    direction:rtl;
+}
+
+.direction-ltr{
+    direction:ltr;
+}
+
+
+.text-all-screen-sizes-1{
+    font-size: calc(.5em + .3vw);
+}
+
+
+.text-all-screen-sizes-2 {
+    font-size: calc(.2em + .4vw);
+}
+
+.text-all-screen-sizes-3 {
+    font-size: calc(.3em + .4vw);
+}
+
+.text-all-screen-sizes-4 {
+    font-size: calc(.5em + .5vw);
+}
+
+.text-all-screen-sizes-5 {
+    font-size: calc(1em + 1vw);
+}
+
+
+.text-all-screen-sizes-6 {
+    font-size: calc(1em + .5vw);
+}
+
+
+.text-all-screen-sizes-7 {
+    font-size: calc(1em + .6vw);
+}
+
+
+

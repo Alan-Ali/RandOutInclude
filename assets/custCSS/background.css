@@ -1,0 +1,117 @@
+.back-transparent {
+    background-color: transparent;
+}
+
+.back-main-white {
+    background-color: rgb(242, 242, 242);
+}
+
+.back-main-green {
+    background-color: rgb(49, 133, 156)
+}
+.back-main-light-green {
+    background-color: #92cddc
+}
+.back-main-grey {
+    background-color: rgb(89, 89, 89)
+}
+
+.back-main-dimmer-grey {
+    background-color: rgb(191, 191, 191)
+}
+
+.back-main-yellow {
+    background-color: rgb(191, 144, 0)
+}
+
+.back-main-dim-yellow {
+    background-color: #fbb040;
+}
+
+.back-main-soft-yellow {
+    background-color: rgb(255, 242, 204)
+}
+
+.back-main-red {
+    background-color: #fb0000;
+}
+
+.back-main-strange-green{
+    background-color: #85DCB0;
+}
+
+.back-main-soft-orange{
+    background-color: #E8A87C;
+}
+
+.back-main-natural-green{
+    background-color: #73A9AD;
+}
+
+.back-main-white-flavoured-grey{
+    background-color: #9CB4CC;
+}
+
+
+
+
+
+
+.back-main-soft-yellow-hover:hover {
+    background-color: #fff2cc;
+}
+
+.back-main-dim-yellow-hover:hover {
+    background-color: #fbb040;
+}
+
+.back-main-green-hover:hover {
+    background-color: #31859c;
+}
+
+.back-main-light-green-hover:hover {
+    background-color: #92cddc
+}
+
+.back-main-yellow-hover:hover {
+    background-color: #bf9000;
+}
+
+.back-main-white-hover:hover {
+    background-color: #f2f2f2;
+}
+
+.back-main-grey-hover:hover {
+    background-color: #595959
+}
+
+.back-main-dimmer-grey-hover:hover {
+    background-color: #bfbfbf
+}
+
+.back-main-red-hover:hover {
+    background-color: #fb0000;
+}
+.back-main-white-flavoured-grey-hover:hover{
+    background-color: #9CB4CC;
+}
+
+
+.back-white{
+    background-color: white;
+}
+
+
+
+
+.back-red {
+    background-color: red;
+}
+
+.back-green {
+    background-color: green;
+}
+
+.back-blue {
+    background-color: red;
+}

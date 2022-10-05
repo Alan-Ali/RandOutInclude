@@ -1,0 +1,62 @@
+@import url(./colorStructure.css);
+@import url(../assets/bootstrap/css/bootstrap.css);
+@import url(../assets/fontawesome/css/fontawesome.css);
+@import url(../assets/fontawesome/css/brands.css);
+@import url(../assets/fontawesome/css/solid.css);
+@import url(../Style/menuBar.css);
+@import url(../assets/custCSS/index.css);
+@import url(../Style/colorStructure.css);
+
+
+.dis-flex-sentence {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+
+}
+
+.grey-white-E5 {
+    background-color: #E5E5E5;
+    /* color: var(--secondary) !important; */
+}
+
+.grey-white-F6 {
+    background-color: #F6F6F6;
+    /* color: var(--secondary) !important; */
+}
+
+.rounded-bottom-15-px {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+
+
+}
+
+.rounded-top-15-px {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+
+.button {
+    border: 1px solid var(--primary)
+}
+
+.button:hover {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important;
+    /* border-color: var(--secondary-first-der) !important; */
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 400px) {
+
+    #form-holder {
+        width: 100%;
+    }
+}

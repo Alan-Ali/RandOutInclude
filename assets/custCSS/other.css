@@ -1,0 +1,72 @@
+/* .course-topic-text-container{
+        transition: height width 250ms;
+} */
+.course-topic-text {
+        transition: all 250ms;
+}
+
+.course-topic-text:hover {
+        background-color: rgb(49, 133, 156);
+        border-color: rgb(49, 133, 156);
+        color: white;
+        border-radius: 3px;
+
+}
+
+
+.opacity-fade {
+        animation: fade 2s infinite;
+}
+
+
+/* .showing-question-header:hover .question-page{
+        right: 0;
+} */
+
+.user-question-details:hover .question-page {
+        right: 0;
+}
+
+
+@keyframes fade {
+        /* 0% {
+                opacity: 0;
+        } */
+        50% {
+                opacity: 0;
+        }
+        100% {
+                opacity: 1;
+        }
+ 
+
+}
+
+.obj-fit-contain{
+        object-fit: contain;
+}
+
+
+.obj-fit-cover{
+        object-fit: cover;
+}
+
+
+.obj-fit-fill{
+        object-fit: fill;
+}
+
+
+.obj-fit-scale-down{
+        object-fit: scale-down;
+}
+
+
+.obj-fit-revert{
+        object-fit: revert;
+}
+
+
+/* .:hover{
+
+} */

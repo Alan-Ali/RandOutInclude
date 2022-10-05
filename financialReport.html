@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/all.css">
+    <link rel="stylesheet" href="./Style/financialReport.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body class="container-fluid w-100-per vh-100 dis-flex-start-center direction-rtl m-0 p-0 mx-0 overflow-hidden">
+    <!-- <div class=" mx-0 m-0 p-0 border border-1 border-danger"> -->
+    <div include-html="menuBar.html"></div>
+    <div id="left-side" class="col- h-100 w-94-per scroll-y mx-0 m-0">
+        <div class="row m-0 mx-0 p-0  ">
+            <div class="row w-100 bottom-border-11-px dis-flex-center-between m-0 mx-0 p-1">
+                <div class="row dis-flex-center-between m-0 p-1 rounded rounded-3 cust-bg-primary rounded">
+
+                    <div class="col-8 dis-flex-center-start m-0 mx-0 pe-4 p-2 text-light text-all-screen-sizes-5  ">
+                        <i class="fa-solid fa-file w-10-per"></i></i>
+                        <p class="p-0 m-0 mx-0 w-90-per">ڕاپۆرتی دارایی</p>
+                    </div>
+
+                    <div class="col-4  dis-flex-center-end ps-3 ">
+                        <div
+                            class="btn top-bar-buttons pt-0 pb-0 ps-2 pe-2 border-0 rounded rounded-3 text-all-screen-sizes-6">
+                            گرێبەستەکان</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="row w-100 bottom-border-11-px dis-flex-center m-0 mx-0 p-1">
+                <div class="row w-98-per mx-0 p-0 dis-flex-center">
+                    <div class="row w-100 m-0 mx-0 dis-flex-center-between p-0 mt-4">
+                        <div
+                            class="shadow rounded rounded-3 w-30-per text-all-screen-sizes-5 m-0 mx-0 cust-bg-secondary-first-der">
+                            <div class="">ساڵ</div>
+                            <select class="form-select text-all-screen-sizes-4 bg-transparent  border border-1 mb-2"
+                                aria-label="Default select example">
+                                <option selected>هەڵبژاردنی ساڵ</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div
+                            class="shadow rounded rounded-3 w-30-per text-all-screen-sizes-5 cust-bg-secondary-first-der">
+                            <div class="">کۆی شووقە/دووکان</div>
+                            <input type="text"
+                                class="form-control text-all-screen-sizes-4 bg-transparent  border border-1 mb-2"
+                                placeholder="" value="200" readonly>
+                        </div>
+                        <div
+                            class="shadow rounded rounded-3 w-30-per text-all-screen-sizes-5 cust-bg-secondary-first-der">
+                            <div class="">کۆی کرێ بۆیەک ساڵ</div>
+                            <input type="text"
+                                class="form-control text-all-screen-sizes-4 bg-transparent  border border-1 mb-2"
+                                placeholder="" value="20000$" readonly>
+                        </div>
+                    </div>
+                    <div class="row m-0 mx-0 p-0 mb-5 mt-4">
+
+                        <div
+                            class="row shadow m-0 mx-0 p-0 dis-flex-center-between cust-bg-secondary-first-der p-4 rounded rounded-3">
+
+                            <div class="w-60-per pb-2 m-0 mx-0   border rounded rounded-4">
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-center-between ">
+                                    <div class="w-30-per">مانگ</div>
+                                    <div class="w-30-per">لیستی ١٢ مانگەکە</div>
+                                    <div class="w-30-per dis-flex-center-end">نرخ</div>
+                                </div>
+                                <div
+                                    class="row m-0 text-all-screen-sizes-5 dis-flex-sentence rounded-top-15-px grey-white-E5">
+                                    <span class="w-50">مانگی 1</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence  grey-white-F6">
+                                    <span class="w-50">مانگی 2</span>
+                                    <span class="w-50 dis-flex-center-end">35450$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence  grey-white-E5">
+                                    <span class="w-50">مانگی 3</span>
+                                    <span class="w-50 dis-flex-center-end">250$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-F6">
+                                    <span class="w-50">مانگی 4</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-E5">
+                                    <span class="w-50">مانگی 5</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-F6">
+                                    <span class="w-50">مانگی 6</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-E5">
+                                    <span class="w-50">مانگی 7</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-F6">
+                                    <span class="w-50">مانگی 8</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-E5">
+                                    <span class="w-50">مانگی 9</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence grey-white-F6">
+                                    <span class="w-50">مانگی 10</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                                <div class="row m-0 text-all-screen-sizes-5 dis-flex-sentence  grey-white-E5">
+
+                                    <span class="w-70-per ">مانگی 11</span>
+                                    <span class="w-30-per dis-flex-center-end">40000$</span>
+                                </div>
+
+                                <div
+                                    class="row m-0 text-all-screen-sizes-5 dis-flex-sentence rounded-bottom-15-px grey-white-F6">
+                                    <span class="w-50">مانگی 12</span>
+                                    <span class="w-50 dis-flex-center-end">40000$</span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="w-35-per h-100 p-0 mx-0 dis-flex-center overflow-hidden border rounded rounded-4">
+                                <div class="w-100 p-0 mx-0 m-0 dis-flex-center text-all-screen-sizes-5">چارتی
+                                    مانگەکان</div>
+                                <div id="myChart" class="w-100 h-500-px p-0 mx-0 m-0 dis-flex-center "></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+</body>
+
+<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/utils.js"></script>
+<script src="./JS/menuBar.js"></script>
+<script src="./JS/includeHtml.js"></script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['مانگ', 'نرخ'],
+            ['مانگی 1', 54.8],
+            ['2 مانگی', 48.6],
+            ['3 مانگی', 44.4],
+            ['مانگی 4', 23.9],
+            ['مانگی 5', 14.5],
+            ['مانگی 6', 14.5],
+            ['مانگی 7', 14.5],
+            ['مانگی 8', 14.5],
+            ['مانگی 9', 14.5],
+            ['مانگی 10', 14.5],
+            ['مانگی 11', 14.5],
+            ['مانگی 12', 14.5]
+        ]);
+
+        var options = {
+            // title: 'ڕاپۆرتی ١٢ مانگەکە',
+            // pieHole: 0.4,
+            // titleTextStyle: {
+            //     color: "#ACA474",
+            //     fontName: '',
+            //     fontSize: 30,
+            //     bold: true,
+            //     italic: true,
+            // },
+            // is3D: true,
+            legend: { position: 'top', textStyle: { color: 'blue', fontSize: 17 } },
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+    }
+    includeHTML(0);
+
+</script>
+
+
+</html>

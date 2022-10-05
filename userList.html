@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/all.css">
+    <link rel="stylesheet" href="./Style/userList.css">
+</head>
+
+<body class="container-fluid w-100-per vh-100 dis-flex-start-center direction-rtl m-0 p-0 mx-0 overflow-hidden">
+    <!-- <div class=" mx-0 m-0 p-0 border border-1 border-danger"> -->
+    <div include-html="menuBar.html"></div>
+    <div id="left-side" class="col- h-100 w-94-per scroll-y mx-0 m-0">
+        <div class="row m-0 mx-0 p-0  ">
+            <div class="row w-100 bottom-border-11-px dis-flex-center-between m-0 mx-0 p-1">
+                <div class="row dis-flex-center-between m-0 p-1 rounded rounded-3 cust-bg-primary rounded">
+
+                    <div class="col-8 dis-flex-center-start m-0 mx-0 pe-4 p-2 text-light text-all-screen-sizes-5  ">
+                        <i class="fa-solid fa-user w-10-per"></i></i>
+                        <p class="p-0 m-0 mx-0 w-90-per">لیستی بەکارهێنەرەکان</p>
+                    </div>
+
+                    <div class="col-4  dis-flex-center-end ps-3 ">
+                        <div
+                            class="btn top-bar-buttons pt-0 pb-0 ps-2 pe-2 border-0 rounded rounded-3 text-all-screen-sizes-6">
+                            گرێبەستەکان</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="row w-100 bottom-border-11-px dis-flex-center m-0 mx-0 p-1">
+                <div class="row w-98-per mx-0 p-0 dis-flex-center">
+                    <div class="row dis-flex-center-start p-2 mx-0">
+                        <select class="form-control w-10-per text-all-screen-sizes-7 part-two">
+                            <option selected>هەڵبژاردن</option>
+                            <option value="1">١</option>
+                            <option value="2">٢</option>
+                        </select>
+                    </div>
+                    <div class="row dis-flex-center p-2 mx-0">
+                        <div class="col-2  text-all-screen-sizes-5">
+                            ناوی بەکارهێنەر
+                        </div>
+                        <div class="col-3  text-all-screen-sizes-5">
+                            ناوی تەواو
+                        </div>
+                        <div class="col-2  text-all-screen-sizes-5">
+                            دۆخ
+                        </div>
+                        <div class="col-2  text-all-screen-sizes-5">
+                            ڕۆڵ
+                        </div>
+                        <div class="col-3  text-all-screen-sizes-5 dis-flex-center">
+                            کردار
+                        </div>
+
+                    </div>
+                    <div class="row shadow cust-bg-secondary-first-der rounded rounded-4  mx-0 p-4">
+                        <div class="row m-0 p-0 mx-0 rounded rounded-3 overflow-hidden">
+                            <div class="row mx-0 p-2 cust-b-primary grey-white-E5">
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ناوی بەکارهێنەر
+                                </div>
+                                <div class="col-3  text-all-screen-sizes-5">
+                                    ناوی تەواو
+                                </div>
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ئەرشیف
+                                </div>
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ئەدمین
+                                </div>
+                                <div class=" col-3  dis-flex-center text-all-screen-sizes-5 ">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button"
+                                        class="btn btn-danger dis-flex-center w-22-per h-100-per text-all-screen-sizes-1 ms-1 me-1"
+                                        data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-warning dis-flex-center w-22-per h-100-per text-light text-all-screen-sizes-1 ms-1 me-1">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-secondary dis-flex-center w-22-per h-100-per text-light text-all-screen-sizes-1 ms-1 me-1">
+                                        <i class="fa-solid fa-key"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="row mx-0 p-2 cust-b-primary grey-white-F6">
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ناوی بەکارهێنەر
+                                </div>
+                                <div class="col-3  text-all-screen-sizes-5">
+                                    ناوی تەواو
+                                </div>
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ئەرشیف
+                                </div>
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ئەدمین
+                                </div>
+                                <div class=" col-3  dis-flex-center text-all-screen-sizes-5 ">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button"
+                                        class="btn btn-danger dis-flex-center w-22-per h-100-per text-all-screen-sizes-1 ms-1 me-1"
+                                        data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-warning dis-flex-center w-22-per h-100-per text-light text-all-screen-sizes-1 ms-1 me-1">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-secondary dis-flex-center w-22-per h-100-per text-light text-all-screen-sizes-1 ms-1 me-1">
+                                        <i class="fa-solid fa-key"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="row mx-0 p-2 cust-b-primary grey-white-E5">
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ناوی بەکارهێنەر
+                                </div>
+                                <div class="col-3  text-all-screen-sizes-5">
+                                    ناوی تەواو
+                                </div>
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ئەرشیف
+                                </div>
+                                <div class="col-2  text-all-screen-sizes-5">
+                                    ئەدمین
+                                </div>
+                                <div class=" col-3  dis-flex-center text-all-screen-sizes-5 ">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button"
+                                        class="btn btn-danger dis-flex-center w-22-per h-100-per text-all-screen-sizes-1 ms-1 me-1"
+                                        data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-warning dis-flex-center w-22-per h-100-per text-light text-all-screen-sizes-1 ms-1 me-1">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-secondary dis-flex-center w-22-per h-100-per text-light text-all-screen-sizes-1 ms-1 me-1">
+                                        <i class="fa-solid fa-key"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row w-100 dis-flex-center direction-ltr w-30-per h-50-per mt-4 ">
+                <div class="btn-group h-50-px w-40-per " role="group" aria-label="Basic example">
+                    <button type="button" class="dis-flex-center p-0 btn button text-all-screen-sizes-5">پێشتر</button>
+                    <button type="button" class="dis-flex-center p-0 btn button text-all-screen-sizes-5">٣-١</button>
+                    <button type="button" class="dis-flex-center p-0 btn button text-all-screen-sizes-5">دواتر</button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade position-fixed" id="reg-modal" tabindex="-1" aria-labelledby="modal-title"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <h6 class="modal-title " id="modal-title"></h5> -->
+                            <button type="button" class="btn-close h6" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-all-screen-sizes-5">
+                            دڵنیایت دەتەوێت ئەم بەکارهێنەرە بسڕیتەوە
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary text-all-screen-sizes-5"
+                                data-bs-dismiss="modal">نەخێر</button>
+                            <button type="button" class="btn btn-primary text-all-screen-sizes-5">بەڵی</button>
+                        </div>
+                    </div>
+                </div>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/utils.js"></script>
+<script src="./JS/menuBar.js"></script>
+<script src="./JS/includeHtml.js"></script>
+<!-- <script src="./JS/userList.js"></script> -->
+
+<script>
+    // var loaded = new Promise((loaded) => {
+    //     window.onload = loaded;
+    // })
+
+    // loaded.then(includeHTML);
+    // setTimeout(() => {
+    //     loaded.then(menuBar)
+    // }, 400);
+    includeHTML(0);
+
+</script>
+
+
+</html>

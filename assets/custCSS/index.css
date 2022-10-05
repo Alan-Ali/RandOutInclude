@@ -1,0 +1,71 @@
+@import "./auto.css";
+@import "./background.css";
+@import "./border.css";
+@import "./display.css";
+@import "./font.css";
+@import "./height.css";
+@import "./margin.css";
+@import "./padding.css";
+@import "./width.css";
+@import "./boxShadow.css";
+/* @import "./button.css"; */
+@import "./scrollBar.css";
+@import "./transform.css";
+@import "./input.css";
+@import "./position.css";
+@import "./animation&transition.css";
+@import "./text.css";
+@import "./other.css";
+@import "./svgs.scss";
+/* @import "./.css"; */
+
+
+@font-face {
+    font-family: rabar_44;
+    src: url(./../fonts/22016-adobearabic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family: rabar_44,'Calibri', sans-serif;
+}
+
+body {
+    /* font-size: calc(1vw + .5em); */
+    background-color: #F9F9FB;
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-cell {
+    cursor: cell;
+}
+
+.cursor-col-resize {
+    cursor: col-resize;
+}
+
+
+.of-hidden {
+    overflow: hidden;
+}
+
+.outline-none {
+    outline: none;
+}
+
+
+
+
+

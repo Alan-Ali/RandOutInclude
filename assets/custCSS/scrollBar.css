@@ -1,0 +1,112 @@
+/*
+
+::-webkit-scrollbar the scrollbar.
+::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+::-webkit-scrollbar-thumb the draggable scrolling handle.
+::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements.
+
+*/
+
+
+.disableScroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.scroll-x{
+    overflow-x: scroll;
+}
+
+.scroll-y {
+    overflow-y: scroll;
+}
+
+
+.scroll-x-auto {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.scroll-y-auto {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scroll-auto{
+    overflow: auto;
+}
+
+
+.scroll-x-scroll {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.scroll-y-scroll {
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+
+
+
+.horiz-scroll::-webkit-scrollbar{
+    width: 2px;
+    height: 2px;
+    /*transform: scale(.5);*/
+}
+
+.horiz-scroll::-webkit-scrollbar-track{
+    width: 2px
+}
+
+.horiz-scroll {
+    /*background-color: #333;*/
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.horiz-scroll button {
+    display: inline-block;
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px;*/
+    text-decoration: none;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    /*background-color: red;*/
+}
+
+
+::-webkit-scrollbar-track {
+    /*box-shadow: outset 0 3px 5px grey;*/
+    border-radius: 10px;
+    /* scroll-snap-align: */
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(153, 153, 153);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(49, 133, 156);
+}
+
