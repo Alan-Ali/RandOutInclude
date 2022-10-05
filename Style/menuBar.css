@@ -39,7 +39,12 @@
     outline: none !important;
 }
 
-
+.overflow-ellipsis {
+    white-space: nowrap;
+    /* width: 50px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .nav-buttons-holder {
     display: flex !important;
